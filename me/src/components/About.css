@@ -1,0 +1,34 @@
+/* About.css */
+.about-section {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 5rem 2rem;
+    text-align: center;
+  }
+  
+  .portrait-container {
+    margin: 2rem auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    border: 5px solid #ff7518;
+    transition: transform 0.5s ease;
+  }
+  
+  .portrait-container:hover {
+    transform: rotate(15deg) scale(1.1);
+  }
+  
+  .portrait {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.3s ease;
+  }
+  
+  .portrait-container:hover .portrait {
+    filter: grayscale(100%) contrast(200%);
+  }
+  

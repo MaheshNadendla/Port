@@ -1,0 +1,123 @@
+/* General styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #000; /* Black background for spooky effect */
+  color: #fff; /* White text for contrast */
+}
+
+/* Spooky Background */
+.spooky-bg {
+  position: relative;
+  height: 100vh;
+  overflow: hidden; /* Hide overflow to prevent scrollbars */
+}
+
+/* Bat Animation in 3D */
+@keyframes fly3D {
+   0% {
+    transform: translate3d(-100vw, -10px, 0) rotateY(215deg) rotateZ(145deg);
+  }
+  25% {
+    transform: translate3d(-50vw, -100px, 150px) rotateY(45deg) rotateZ(165deg);
+  } 
+  50% {
+    transform: translate3d(0, -200px, -200px) rotateY(90deg) rotateZ(10deg);
+  }
+  75% {
+    transform: translate3d(50vw, 100px, 100px) rotateY(135deg) rotateZ(-10deg);
+  }
+  100% {
+    transform: translate3d(100vw, 0, 0) rotateY(180deg) rotateZ(0deg);
+  }
+}
+
+/* Bat Container - 3D Perspective */
+.bat-container {
+  background-color: red;
+  position: relative;
+  perspective: 1000px;
+  height: 100vh;
+  /* Optional: overflow-x or overflow-y for more control */
+  /* overflow-y: hidden; Hide only horizontal overflow */
+}
+
+
+.bat {
+  /* background-color: white; */
+  position: absolute;
+  top: 20%; /* Adjust this value to change the starting height */
+  left: -100px; /* Start offscreen */
+  width: 80px; /* Bat size */
+  animation: fly3D 10s ease-in-out infinite;
+  /* pointer-events: none; Prevent interaction with bats */
+}
+
+.bat:nth-child(2) {
+  top: 30%;
+  width: 60px;
+  animation-delay: 1.5s; /* Delay to stagger bats */
+}
+
+.bat:nth-child(3) {
+  top: 40%;
+  width: 60px;
+  animation-delay: 2s; /* Delay to stagger bats */
+}
+
+.bat:nth-child(4) {
+  top: 50%;
+  width: 70px;
+  animation-delay: 2.5s; /* Delay to stagger bats */
+}
+
+.bat:nth-child(5) {
+  top: 60%;
+  width: 70px;
+  animation-delay: 3s; /* Delay to stagger bats */
+}
+
+.bat:nth-child(6) {
+  top: 70%;
+  width: 70px;
+  animation-delay: 3.5s; /* Delay to stagger bats */
+}
+
+.bat img {
+  width: 100%;
+  height: auto;
+  transform-origin: center; /* Center the rotation */
+}
+
+/* Navbar styles */
+.navbar {
+
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+
+  border-radius: 5px;
+}
+
+/* Section styles */
+h1, h2, h3, h4 {
+  text-align: center; /* Center headings */
+}
+
+/* Home Section */
+.home {
+  padding: 50px 20px;
+}
+
+/* About Section */
+.about {
+  padding: 50px 20px;
+}
+
+/* Portfolio Section */
+.portfolio {
+  padding: 50px 20px;
+}
+
+/* Contact Section */
+.contact {
+  padding: 50px 20px;
+}

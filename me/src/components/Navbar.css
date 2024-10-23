@@ -1,0 +1,29 @@
+/* Navbar.css */
+.spooky-navbar {
+    background-color: #000;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 0 10px #ff7518;
+  }
+  
+  .spooky-navbar ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+  }
+  
+  .spooky-navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+  }
+  
+  .spooky-navbar ul li a:hover {
+    color: #ff7518; /* Halloween Orange */
+    text-shadow: 0 0 10px #ff7518;
+  }
+  
