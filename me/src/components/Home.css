@@ -32,9 +32,16 @@
     font-size: 1.5rem;
     margin-top: 1rem;
   }
+
+  .intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   
   .cta-btn {
-    display: inline-block;
+    /* display: inline-block; */
     margin-top: 2rem;
     padding: 10px 20px;
     background-color: #ff7518;
@@ -42,10 +49,16 @@
     border: none;
     font-size: 1.2rem;
     transition: background-color 0.3s ease;
+    /* position: fixed;
+    z-index: 100; */
+
+    cursor: pointer;
+    text-decoration: none;
   }
   
   .cta-btn:hover {
     background-color: #fff;
     color: #ff7518;
+    cursor: pointer;
   }
   

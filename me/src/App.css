@@ -9,6 +9,7 @@ body {
 /* Spooky Background */
 .spooky-bg {
   position: relative;
+  /* pointer-events: none; */
   height: 100vh;
   overflow: hidden; /* Hide overflow to prevent scrollbars */
 }
@@ -64,6 +65,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  pointer-events: none;
   /* Optional: overflow-x or overflow-y for more control */
   /* overflow-y: hidden; Hide only horizontal overflow */
 }
@@ -76,6 +78,7 @@ body {
   /* left: -100px; Start offscreen */
   width: 80px; /* Bat size */
   animation: fly3D 5s ease-in-out infinite;
+  pointer-events: none;
   /* pointer-events: none; Prevent interaction with bats */
 }
 
@@ -84,6 +87,7 @@ body {
   width: 100%;
   height: auto;
   transform-origin: center; /* Center the rotation */
+  pointer-events: none;
 }
 
 /* Navbar styles */

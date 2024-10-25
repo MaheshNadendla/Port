@@ -17,7 +17,7 @@ const Contact = () => {
         <input type="text" placeholder="Your Name" required />
         <input type="email" placeholder="Your Email" required />
         <textarea placeholder="Your Message" required></textarea>
-        <button type="submit" className="cta-btn">Send</button>
+        <button type="submit" className="cta1-btn">Send</button>
       </form>
       {submitted && <p className="success-message">Your message has been sent into the shadows!</p>}
     </div>

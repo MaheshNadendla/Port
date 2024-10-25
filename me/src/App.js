@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Navbar from './components/Navbar'; // Ensure these paths are correct
 import Home from './components/Home';
 import About from './components/About';
@@ -7,7 +7,7 @@ import Contact from './components/Contact';
 import Bat from './components/Bat'; // Your BatMatrix component
 
 function App() {
-  const [showBats, setShowBats] = useState(true); // State to manage bat visibility
+  const [showBats, setShowBats] = useState(false); // State to manage bat visibility
 
   // useEffect(() => {
   //   const showTimer = setTimeout(() => {
@@ -24,11 +24,13 @@ function App() {
   //   };
   // }, []);
 
+
+
   return (
     <div className="App">
       <Navbar />
       <div className="spooky-bg">
-        <Home />
+        <Home setShowBats = {setShowBats} showBats={showBats} />
         <Bat showBats={showBats} /> {/* Pass the showBats state as a prop */}
       </div>
       <About />
