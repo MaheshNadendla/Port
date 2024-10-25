@@ -13,31 +13,57 @@ body {
   overflow: hidden; /* Hide overflow to prevent scrollbars */
 }
 
-/* Bat Animation in 3D */
 @keyframes fly3D {
-   0% {
-    transform: translate3d(-100vw, -10px, 0) rotateY(215deg) rotateZ(145deg);
+  0% {
+    transform: translate3d(0, 0, 0) rotate(0deg) scale(1);
   }
-  25% {
-    transform: translate3d(-50vw, -100px, 150px) rotateY(45deg) rotateZ(165deg);
-  } 
+  10% {
+    transform: translate3d(20vw, -10vh, 50px) rotate(10deg) scale(1.1);
+  }
+  20% {
+    transform: translate3d(40vw, 10vh, 150px) rotate(-20deg) scale(0.9);
+  }
+  30% {
+    transform: translate3d(60vw, -20vh, -50px) rotate(30deg) scale(1.2);
+  }
+  40% {
+    transform: translate3d(80vw, 20vh, 100px) rotate(-30deg) scale(0.8);
+  }
   50% {
-    transform: translate3d(0, -200px, -200px) rotateY(90deg) rotateZ(10deg);
+    transform: translate3d(100vw, -30vh, 200px) rotate(360deg) scale(1);
   }
-  75% {
-    transform: translate3d(50vw, 100px, 100px) rotateY(135deg) rotateZ(-10deg);
+  60% {
+    transform: translate3d(80vw, -10vh, -150px) rotate(45deg) scale(1.1);
+  }
+  70% {
+    transform: translate3d(60vw, 30vh, 50px) rotate(-15deg) scale(0.9);
+  }
+  80% {
+    transform: translate3d(40vw, -20vh, -100px) rotate(20deg) scale(1.2);
+  }
+  90% {
+    transform: translate3d(20vw, 10vh, 0px) rotate(-10deg) scale(0.8);
   }
   100% {
-    transform: translate3d(100vw, 0, 0) rotateY(180deg) rotateZ(0deg);
+    transform: translate3d(0, 0, 0) rotate(0deg) scale(1);
   }
 }
 
+
+
+
 /* Bat Container - 3D Perspective */
 .bat-container {
-  background-color: red;
-  position: relative;
+  /* background-color: red; */
+  position: absolute;
+  top:0;
+  left:0;
   perspective: 1000px;
   height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   /* Optional: overflow-x or overflow-y for more control */
   /* overflow-y: hidden; Hide only horizontal overflow */
 }
@@ -46,42 +72,13 @@ body {
 .bat {
   /* background-color: white; */
   position: absolute;
-  top: 20%; /* Adjust this value to change the starting height */
-  left: -100px; /* Start offscreen */
+  /* top: 20%; Adjust this value to change the starting height */
+  /* left: -100px; Start offscreen */
   width: 80px; /* Bat size */
-  animation: fly3D 10s ease-in-out infinite;
+  animation: fly3D 5s ease-in-out infinite;
   /* pointer-events: none; Prevent interaction with bats */
 }
 
-.bat:nth-child(2) {
-  top: 30%;
-  width: 60px;
-  animation-delay: 1.5s; /* Delay to stagger bats */
-}
-
-.bat:nth-child(3) {
-  top: 40%;
-  width: 60px;
-  animation-delay: 2s; /* Delay to stagger bats */
-}
-
-.bat:nth-child(4) {
-  top: 50%;
-  width: 70px;
-  animation-delay: 2.5s; /* Delay to stagger bats */
-}
-
-.bat:nth-child(5) {
-  top: 60%;
-  width: 70px;
-  animation-delay: 3s; /* Delay to stagger bats */
-}
-
-.bat:nth-child(6) {
-  top: 70%;
-  width: 70px;
-  animation-delay: 3.5s; /* Delay to stagger bats */
-}
 
 .bat img {
   width: 100%;
