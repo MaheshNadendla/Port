@@ -61,4 +61,61 @@
     color: #ff7518;
     cursor: pointer;
   }
+  .leftTree{
+    position: absolute;
+    left:0px;
+    top:6rem;
+    /* background-color: blue; */
+    width: 100rem;
+    z-index: 20;
+    filter: drop-shadow(10px 10px 30px red);
+    pointer-events: none;
+    
+  }
+
+  .rightTree{
+
+    position: absolute;
+    right:0px;
+    top:6rem;
+    /* background-color: blue; */
+    width:  100rem;
+    z-index: 20;
+
+    filter: drop-shadow(10px 10px 30px red);
+    pointer-events: none;
+
+  }
+
+  .leftGate{
+
+    position: absolute;
+    left:-7rem;
+    bottom:0rem;
+    /* background-color: blue; */
+    width: 90rem;
+    height: 40rem;
+    z-index: 20;
+    filter: drop-shadow(5px 5px 50px red);
+    pointer-events: none;
+
+
+
+  }
+
+  .rightGate{
+
+    position: absolute;
+    right:-7rem;
+    bottom:0rem;
+    /* background-color: blue; */
+    width: 90rem;
+    height: 40rem;
+    z-index: 20;
+    filter: drop-shadow(5px 5px 50px red);
+    pointer-events: none;
+
+
+
+  }
   

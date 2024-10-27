@@ -4,8 +4,17 @@
   height: 100vh;
 }
 
+  .shape__bg {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  mix-blend-mode: soft-light;
+  opacity: .5;
+}
+
 .about-section {
-    background-color: #1a1a1a;
+    background-image: url('shape-bg.png');
     color: #fff;
     padding: 0rem 2rem;
     padding-top: 1rem;
@@ -32,6 +41,30 @@
     justify-content: center;
   }
   .Heading{
-    margin-top: 8rem;
+    margin-top: 0rem;
+  }
+
+
+  .shape__small {
+    top: 5rem;
+    left: -4rem;
+  }
+  
+  
+  .shape__small {
+      width: 250px;
+      height: 250px;
+  }
+  
+  .shape__small, .shape__big {
+    position: relative;
+    background-color: rgb(219 103 36);;
+    filter: blur(96px);
+    z-index: -1;
+    border-radius: 50%;
+  
+  
+    /* filter: blur(132px);
+    opacity: 0.75; */
   }
   
