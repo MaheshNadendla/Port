@@ -1,0 +1,109 @@
+.skills-container {
+    text-align: center;
+    padding: 2rem;
+    /* background-color: #1a1a2e; */
+    /* border: 3px solid orange; */
+    /* border-radius: 15px; */
+    box-shadow: 0 0 15px rgba(255, 140, 0, 0.6);
+    color: #fff;
+}
+
+.skills-heading {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    margin-top: 5.5rem;
+    color: #ff7518;
+    text-shadow: 0 0 10px rgba(255, 165, 0, 0.8);
+}
+
+.skills-list {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0rem;
+    flex-wrap: wrap;
+}
+
+.AllSkills{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.skill-item {
+    position: relative;
+    margin: 1rem;
+    width: 150px;
+    padding: 1rem;
+    border-radius: 10px;
+    background: #282846;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.star-rating {
+    font-size: 1.5rem;
+    color: #ffd700; /* Gold color for stars */
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.star {
+    margin: 0 1px;
+}
+
+.star.filled {
+    color: #ff7518; /* Orange color for filled stars */
+}
+
+.circular-loader {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+
+.circular-loader-svg {
+    transform: rotate(-90deg); /* Start from the top */
+    animation: spin 2s linear infinite; /* Infinite rotation for the loader */
+}
+
+.circle-bg {
+    fill: none;
+    /* stroke: #444; */
+    /* stroke-width: 10; */
+}
+
+.circle-progress {
+    fill: none;
+    stroke: #ff7518; /* Orange color for the loader */
+    /* stroke-width: 10; */
+    transition: stroke-dasharray 0.5s ease; /* Smooth transition for the dasharray */
+}
+
+.percentage {
+    position: absolute;
+    top: 50%; /* Center the percentage vertically */
+    left: 50%; /* Center the percentage horizontally */
+    transform: translate(-50%, -50%); /* Center using transform */
+    font-size: 1.2rem;
+    color: #ff7518;
+    text-shadow: 0 0 5px rgba(255, 165, 0, 0.8);
+}
+
+.skill-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #ff7518, 0 0 25px #ff7518;
+}
+
+/* Keyframes for smooth rotation */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

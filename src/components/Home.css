@@ -1,4 +1,7 @@
 /* Home.css */
+
+  
+
 .spooky-bg {
     background-image: url('House.png'); 
     background-size:inherit;
@@ -116,6 +119,30 @@
     pointer-events: none;
 
 
+
+  }
+
+  .CloudsBro{
+    /* pointer-events: none; */
+    width: 95dvw;
+    /* cursor: pointer; */
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left:50%;
+    top:-25%;
+    z-index: 50;
+    opacity: 1;
+
+
+  }
+
+  .MoonBro{
+
+    position: absolute;
+    height: 15rem;
+    top:-2rem;
+    right: 48rem;
+    z-index: 30;
 
   }
   

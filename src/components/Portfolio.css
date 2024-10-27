@@ -141,3 +141,12 @@
 
 
   }
+
+  .MainHeading{
+
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    margin-top: 5.5rem;
+    color: #ff7518;
+    text-shadow: 0 0 10px rgba(255, 165, 0, 0.8);
+}

@@ -5,6 +5,7 @@ import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Bat from './components/Bat'; // Your BatMatrix component
+import Skills from './components/Skills';
 
 function App() {
   const [showBats, setShowBats] = useState(false); // State to manage bat visibility
@@ -35,6 +36,7 @@ function App() {
       </div>
       <About />
       <Portfolio />
+      <Skills/>
       <Contact />
     </div>
   );

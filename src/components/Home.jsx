@@ -16,6 +16,9 @@ const Home = ({ setShowBats, showBats }) => {
   const rightGate = useRef(null);
   const [val4,setValue4]= useState(0);
 
+  const Cloud = useRef(null);
+  const [val5,setValue5]= useState(0);
+
   useEffect(() => {
     const handleScroll = () => {
       const scrollPositionleft = window.scrollY*-0.5;
@@ -46,6 +49,15 @@ const Home = ({ setShowBats, showBats }) => {
         rightGate.current.style.right = `${scrollPositionrightGate}px`;
       }
 
+      const cloudPos = (window.scrollY*1)-110;
+      setValue5(cloudPos);
+
+      if (Cloud.current) {
+        Cloud.current.style.top = `${cloudPos}px`;
+      }
+
+
+
 
 
     };
@@ -71,7 +83,11 @@ const Home = ({ setShowBats, showBats }) => {
   };
 
   return (
-    <>
+    <div id="home">
+
+   {/* <img src="/assets/home-moon.png" alt="hello" className='MoonBro' /> */}
+
+    <img ref={Cloud} src="/assets/clouds.png" alt="Scare" className='CloudsBro' />
     
     <img ref={leftTree} src="/parox/tree-left.png" className='leftTree' alt="xyz" />
 
@@ -98,7 +114,7 @@ const Home = ({ setShowBats, showBats }) => {
         <audio id="spooky-audio" src="/audio/BatSound.mp3" loop /> {/* Audio element with direct path */}
       </div>
     </div>
-    </>
+    </div>
   );
 };
 

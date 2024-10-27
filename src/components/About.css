@@ -19,6 +19,11 @@
     padding: 0rem 2rem;
     padding-top: 1rem;
     text-align: center;
+
+    border-top: 1px solid red;
+
+    position: relative;
+
   }
   
   .portrait-container {
@@ -41,23 +46,28 @@
     justify-content: center;
   }
   .Heading{
-    margin-top: 0rem;
+    margin-top: 8rem;
   }
 
 
   .shape__small {
     top: 5rem;
-    left: -4rem;
+    right: 0;
+  }
+
+  .shape__big {
+    top: 5rem;
+    left: 0;
   }
   
   
-  .shape__small {
+  .shape__small,.shape__big {
       width: 250px;
       height: 250px;
   }
   
   .shape__small, .shape__big {
-    position: relative;
+    position: absolute;
     background-color: rgb(219 103 36);;
     filter: blur(96px);
     z-index: -1;
@@ -67,4 +77,75 @@
     /* filter: blur(132px);
     opacity: 0.75; */
   }
-  
+ 
+
+  .MainPumpKin{
+
+    position: absolute;
+    bottom : 3rem;
+    width: 30rem;
+    left: 50%;
+    transform: translate(-50%,0%);
+  }
+
+  .ScarePhoto{
+
+    position: absolute;
+    bottom : -4rem;
+    width: 30rem;
+    z-index:50;
+    left: 10rem;
+    /* transform: translate(-50%,0%); */
+    pointer-events: none;
+
+    animation: Rotate2 2s infinite alternate;
+    transform-origin: bottom;
+    overflow: hidden;
+
+  }
+
+  .ScarePhoto2{
+
+    position: absolute;
+    z-index:50;
+    bottom : -4rem;
+    width: 30rem;
+    right: 10rem;
+    animation: Rotate1 2s infinite alternate;
+    transform-origin: bottom;
+    pointer-events: none;
+    overflow: hidden;
+  }
+
+  .Grasses{
+
+    position: absolute;
+    z-index:50;
+    left:0;
+    top : -20rem;
+
+
+
+  }
+
+
+  @keyframes Rotate1 {
+    from {
+      
+      rotate: -22.5deg;
+    }
+    to {
+      
+      rotate: 22.5deg;
+    }
+  }
+  @keyframes Rotate2 {
+    from {
+      
+      rotate: 22.5deg;
+    }
+    to {
+      
+      rotate: -22.5deg;
+    }
+  }

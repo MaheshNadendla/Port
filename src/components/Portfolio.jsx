@@ -70,7 +70,7 @@ const projects = [
 
   return (
     <div id="portfolio" className="portfolio-section Heights ">
-      <h2>Portfolio</h2>
+      <h2 class="MainHeading">Portfolio</h2>
       <p>Hi, I’m Mahesh, a web developer with a passion for crafting spooky and creative designs.</p>
       <div className="portfolio-grid">
         {projects.map((project, index) => (
