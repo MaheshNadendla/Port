@@ -1,8 +1,35 @@
 /* Contact.css */
+
+#contact{
+  min-height: 100vh;
+  max-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.ConMe{
+  margin-top: 5em;
+}
+
+.DownsTree{
+  position: absolute;
+  width: 39em;
+  left: 0;
+  bottom:-3em;
+}
+
+.DownsTree2{
+  position: absolute;
+  width: 38em;
+  rotate: 90deg;
+  right: 0;
+  bottom:-4em;
+}
+
 .contact-section {
-    background-color: #1a1a1a;
+    background-color: black;
     color: #fff;
-    padding: 5rem 2rem;
+    /* padding: 5rem 2rem; */
     text-align: center;
   }
   

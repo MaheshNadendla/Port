@@ -1,11 +1,29 @@
+#skills{
+    overflow: hidden;
+}
+
 .skills-container {
     text-align: center;
     padding: 2rem;
     /* background-color: #1a1a2e; */
     /* border: 3px solid orange; */
     /* border-radius: 15px; */
-    box-shadow: 0 0 15px rgba(255, 140, 0, 0.6);
+    /* box-shadow: 0 0 15px rgba(255, 140, 0, 0.6); */
     color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.LeftsTree{
+    position: absolute;
+    width: 39em;
+    left: -4em;
+}
+
+.RightsTree{
+    position: absolute;
+    width: 38em;
+    right: -4em;
 }
 
 .skills-heading {

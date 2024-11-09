@@ -12,8 +12,10 @@ const Contact = () => {
 
   return (
     <div id="contact" className="contact-section">
-      <h2 className='MainHeading' >Contact Me</h2>
+      <img src="/assets/footer-tree2.png" alt="hello" className='DownsTree' />
+      <img src="/assets/home-tree2.png" alt="hello" className='DownsTree2' />
       <form onSubmit={handleSubmit}>
+      <h2 className='MainHeading ConMe' >Contact Me</h2>
         <input type="text" placeholder="Your Name" required />
         <input type="email" placeholder="Your Email" required />
         <textarea placeholder="Your Message" required></textarea>

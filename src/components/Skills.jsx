@@ -46,6 +46,9 @@ const Skills = () => {
 
     return (
         <div id='skill' className="skills-container">
+
+<img src="/assets/home-tree1.png" alt="hello" className='LeftsTree' />
+<img src="/assets/home-tree2.png" alt="hello" className='RightsTree' />
             <h2 className="skills-heading">👻 Skills & Spooky Powers 👻</h2>
             <div className="skills-list">
                 {skills.map((category, index) => (
