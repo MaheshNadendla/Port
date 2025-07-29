@@ -1,9 +1,9 @@
 /* Navbar.css */
-.spooky-navbar {
+/* .spooky-navbar {
     background-color: #000;
-    padding: 1rem;
+    
     position: fixed;
-    width: 100%;
+    width: 100dvw;
     top: 0;
     z-index: 100;
     box-shadow: 0 0 10px #ff7518;
@@ -23,7 +23,169 @@
   }
   
   .spooky-navbar ul li a:hover {
-    color: #ff7518; /* Halloween Orange */
+    color: #ff7518; 
     text-shadow: 0 0 10px #ff7518;
-  }
+  } */
+
+
+
+
+
+
+/* Navbar base */
+.spooky-navbar {
+  background-color: #000;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+  box-shadow: 0 0 10px #ff7518;
+  /* padding: 1rem; */
+}
+
+/* Left - Home */
+.nav-left a {
+  color: #fff;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+/* Main Nav Links (Desktop) */
+.nav-links {
   
+  display: flex;
+  gap: 3rem;
+  z-index: -1;
+}
+
+/* Link Style */
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+.nav-links a:hover {
+  color: #ff7518;
+  text-shadow: 0 0 10px #ff7518;
+}
+
+/* Hamburger Icon */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #ff7518;
+  border-radius: 2px;
+}
+
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 1000; /* ensure it's on top */
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #ff7518;
+  border-radius: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Animate to cross */
+.hamburger.cross span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.cross span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.cross span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+
+/* ----------------------------
+   RESPONSIVE MENU SLIDE-IN
+---------------------------- */
+
+/* Mobile & Tablet (≤ 768px) */
+@media (max-width: 768px) {
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 220px;
+    background: #000;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5rem 1.5rem;
+    gap: 1.5rem;
+    transform: translateX(100%);
+    transition: transform 0.4s ease-in-out;
+    /* z-index: 99; */
+  }
+
+  .nav-links.open {
+    transform: translateX(0);
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .spooky-navbar {
+    padding: 1rem 1.2rem;
+  }
+}
+
+/* Mobile (≤ 480px) */
+@media (max-width: 480px) {
+  .nav-links {
+    width: 180px;
+    padding: 4rem 1rem;
+    gap: 1.2rem;
+  }
+
+  .nav-links a {
+    font-size: 1.05rem;
+  }
+
+  .spooky-navbar {
+    padding: 0.8rem 1rem;
+  }
+}
+
+/* Mini Mobile (≤ 375px) */
+@media (max-width: 375px) {
+  .nav-links {
+    width: 160px;
+    padding: 3.5rem 0.8rem;
+    gap: 1rem;
+  }
+
+  .nav-links a {
+    font-size: 0.95rem;
+  }
+
+  .spooky-navbar {
+    padding: 0.7rem 0.8rem;
+  }
+}

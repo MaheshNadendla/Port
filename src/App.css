@@ -1,6 +1,13 @@
 /* General styles */
-body {
+
+*{
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  
   font-family: 'Arial', sans-serif;
   background-color: #000; /* Black background for spooky effect */
   color: #fff; /* White text for contrast */
@@ -121,6 +128,11 @@ h1, h2, h3, h4 {
 /* Contact Section */
 .contact {
   padding: 50px 20px;
+}
+
+
+html, body {
+  overflow-x: hidden;
 }
 
 

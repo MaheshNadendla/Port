@@ -145,4 +145,95 @@
     z-index: 30;
 
   }
+
+
+
+  @media (max-width: 1024px) {
+  .glowing-text {
+    font-size: 3rem;
+  }
+
+  .intro-text {
+    font-size: 1.3rem;
+  }
+
+  .leftTree, .rightTree, .leftGate, .rightGate {
+    width: 70rem;
+  }
+
+  .MoonBro {
+    height: 12rem;
+    right: 30rem;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .glowing-text {
+    font-size: 2.5rem;
+  }
+
+  .intro-text {
+    font-size: 1.1rem;
+    text-align: center;
+    padding-inline: 1rem;
+  }
+
+  .leftTree, .rightTree {
+    width: 45rem;
+    top: 5rem;
+  }
+
+  .leftGate, .rightGate {
+    width: 50rem;
+    height: 30rem;
+    bottom: -2rem;
+  }
+
+  .MoonBro {
+    height: 10rem;
+    right: 20rem;
+  }
+
+  .CloudsBro {
+    top: -10%;
+    width: 100%;
+    height: 50%;
+  }
+}
+
+
+
+@media (max-width: 480px) {
+  .glowing-text {
+    font-size: 2rem;
+  }
+
+  .intro-text {
+    font-size: 1rem;
+  }
+
+  .cta-btn {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+
+  .leftTree, .rightTree {
+    width: 35rem;
+    top: 4.5rem;
+  }
+
+  .leftGate, .rightGate {
+    width: 20rem;
+    height: 38rem;
+  }
+
+  .MoonBro {
+    height: 8rem;
+    right: 10rem;
+  }
+}
+
+
   

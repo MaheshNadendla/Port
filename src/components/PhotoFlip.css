@@ -42,5 +42,6 @@
 
   .flip-card-front img , .flip-card-back img {
     height: 100%;
+    width: auto;
 
   }

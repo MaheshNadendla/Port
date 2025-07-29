@@ -37,7 +37,10 @@ const About = () => {
             Hello Guys
             <Typejs/>
         </div>
-        <PhotoFlip/>
+        <div className="PhotoMan">
+          <PhotoFlip/>
+        </div>
+        
       </div>
 
      
