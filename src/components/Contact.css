@@ -83,4 +83,67 @@
       opacity: 1;
     }
   }
+
+
+  
+/* Tablet */
+@media (max-width: 1024px) {
+  .DownsTree {
+    width: 24em;
+    bottom: -3em;
+    left: 1.5em;
+  }
+
+  .DownsTree2 {
+    width: 24em;
+    bottom: -3em;
+    right: 1.5em;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .DownsTree {
+    width: 17em;
+    bottom: -2em;
+    left: 0.9em;
+  }
+
+  .DownsTree2 {
+    width: 17em;
+    bottom: -2em;
+    right: 0.9em;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .DownsTree {
+    width: 13em;
+    bottom: -1.5em;
+    left: 0.3em;
+  }
+
+  .DownsTree2 {
+    width: 13em;
+    bottom: -1.5em;
+    right: 0.3em;
+  }
+}
+
+/* Mini Mobile */
+@media (max-width: 375px) {
+  .DownsTree {
+    width: 9em;
+    bottom: -1em;
+    left: 0.1em;
+  }
+
+  .DownsTree2 {
+    width: 8em;
+    bottom: -1em;
+    right: 0.1em;
+  }
+}
+
   
