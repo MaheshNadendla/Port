@@ -26,6 +26,14 @@
     right: -4em;
 }
 
+.category-name {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    margin-top: 5.5rem;
+    color: #ff9b18;
+    text-shadow: 0 0 10px rgba(255, 165, 0, 0.8);
+}
+
 .skills-heading {
     font-size: 2rem;
     margin-bottom: 1.5rem;
@@ -97,8 +105,9 @@
 .circle-progress {
     fill: none;
     stroke: #ff7518; /* Orange color for the loader */
-    /* stroke-width: 10; */
+    stroke-width: 4;
     transition: stroke-dasharray 0.5s ease; /* Smooth transition for the dasharray */
+    stroke-linecap: round;
 }
 
 .percentage {

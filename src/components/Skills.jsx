@@ -1,5 +1,5 @@
 import React from 'react';
-import './Skills.css'; // Import your existing CSS
+import './Skills.css';
 
 const Skills = () => {
     const skills = [
@@ -30,7 +30,6 @@ const Skills = () => {
                 { name: 'DSA', level: 90, stars: 5 },
             ],
         },
-        
         {
             category: 'Tools & Technologies',
             skills: [
@@ -42,46 +41,55 @@ const Skills = () => {
             ],
         },
     ];
-    
+
+    const radius = 45;
+    const circumference = 2 * Math.PI * radius;
 
     return (
-        <div id='skill' className="skills-container">
-
-<img src="/assets/home-tree1.png" alt="hello" className='LeftsTree' />
-<img src="/assets/home-tree2.png" alt="hello" className='RightsTree' />
+        <div id="skill" className="skills-container">
+            <img src="/assets/home-tree1.png" alt="hello" className="LeftsTree" />
+            <img src="/assets/home-tree2.png" alt="hello" className="RightsTree" />
             <h2 className="skills-heading">👻 Skills & Spooky Powers 👻</h2>
             <div className="skills-list">
                 {skills.map((category, index) => (
                     <div key={index} className="skill-category">
                         <h3 className="category-name">{category.category}</h3>
                         <div className="AllSkills">
-                        {category.skills.map((skill, skillIndex) => (
-                            <div key={skillIndex} className="skill-item">
-                                <h4 className="skill-name">{skill.name}</h4>
-                                <div className="star-rating">
-                                    {Array.from({ length: 5 }, (_, starIndex) => (
-                                        <span key={starIndex} className={`star ${starIndex < skill.stars ? 'filled' : ''}`}>
-                                            ★
-                                        </span>
-                                    ))}
-                                </div>
-                                <div className="circular-loader">
-                                    <svg className="circular-loader-svg" viewBox="0 0 100 100">
-                                        <circle className="circle-bg" cx="50" cy="50" r="45" />
-                                        <circle
-                                            className="circle-progress"
-                                            cx="50"
-                                            cy="50"
-                                            r="45"
-                                            style={{
-                                                strokeDasharray: `${skill.level} ${100 - skill.level}`,
-                                            }}
-                                        />
-                                    </svg>
-                                    <div className="percentage">{skill.level}%</div>
-                                </div>
-                            </div>
-                        ))}
+                            {category.skills.map((skill, skillIndex) => {
+                                const offset = circumference - (skill.level / 100) * circumference;
+
+                                return (
+                                    <div key={skillIndex} className="skill-item">
+                                        <h4 className="skill-name">{skill.name}</h4>
+                                        <div className="star-rating">
+                                            {Array.from({ length: 5 }, (_, starIndex) => (
+                                                <span
+                                                    key={starIndex}
+                                                    className={`star ${starIndex < skill.stars ? 'filled' : ''}`}
+                                                >
+                                                    ★
+                                                </span>
+                                            ))}
+                                        </div>
+                                        <div className="circular-loader">
+                                            <svg className="circular-loader-svg" viewBox="0 0 100 100">
+                                                <circle className="circle-bg" cx="50" cy="50" r="45" />
+                                                <circle
+                                                    className="circle-progress"
+                                                    cx="50"
+                                                    cy="50"
+                                                    r="45"
+                                                    style={{
+                                                        strokeDasharray: circumference,
+                                                        strokeDashoffset: offset,
+                                                    }}
+                                                />
+                                            </svg>
+                                            <div className="percentage">{skill.level}%</div>
+                                        </div>
+                                    </div>
+                                );
+                            })}
                         </div>
                     </div>
                 ))}
