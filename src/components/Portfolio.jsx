@@ -22,7 +22,7 @@ const projects = [
       link: "https://jntuhces-fest-2k25.onrender.com/", 
       des: "College fest events and registrations.", 
       lan: "HTML, CSS, JavaScript, React",
-      code : `${github}`
+      code : `${github}/jntuhces-fest`
   },
 
 
@@ -32,7 +32,7 @@ const projects = [
     link: `https://chatapp-frontend-5ql0.onrender.com/`, 
     des: "A real-time chat app with messaging.", 
     lan: "MERN Stack, Socket.io",
-    code : `${github}`
+    code : `${github}/MiniProject`
   },
 
   { 
@@ -41,7 +41,7 @@ const projects = [
     link: `https://mahesh-nadendla.infinityfree.me/`, 
     des: "Manage students in-out records.", 
     lan: "PHP, MySQL, HTML, CSS",
-    code : `${github}`
+    code : `${github}/PhpPrograms/tree/master/InOutProject`
   },
 
 
@@ -51,7 +51,7 @@ const projects = [
     link: `${git}/BounceBall`, 
     des: "An engaging bouncing ball game.", 
     lan: "Html, Css, Js, React",
-    code : `${github}`
+    code : `${github}/BounceBall`
   },
   { 
     title: "IOS Phone Calculator", 
@@ -59,7 +59,7 @@ const projects = [
     link: `${git}/IPhoneCalculator`, 
     des: "iOS-style mobile calculator.", 
     lan: "Html, Css, Js, React",
-    code : `${github}`
+    code : `${github}/IPhoneCalculator`
   },
   { 
     title: "English Dictionary API", 
@@ -67,7 +67,7 @@ const projects = [
     link: `${git}/Dictionary`, 
     des: "API to get word meanings.", 
     lan: "Html, Css, Js, React",
-    code : `${github}` 
+    code : `${github}/Dictionary` 
   },
   { 
     title: "Snake and Ladder Game", 
@@ -75,7 +75,7 @@ const projects = [
     link: `${git}/SnakeAndLader`, 
     des: "Classic snake and ladder game.", 
     lan: "Html, Css, Js, React",
-    code : `${github}` 
+    code : `${github}/SnakeAndLader` 
   },
   { 
     title: "Tic-Tac-Toe Game", 
@@ -83,7 +83,7 @@ const projects = [
     link: `${git}/Tic-Tac-Toe`, 
     des: "Classic Tic-Tac-Toe with O and X.", 
     lan: "Html, Css, Js, React",
-    code : `${github}` 
+    code : `${github}/Tic-Tac-Toe` 
   },
   { 
     title: "Shopping Cart", 
@@ -91,21 +91,18 @@ const projects = [
     link: `${git}/ClocksCart1`, 
     des: "Cart app for clock sales.", 
     lan: "Html, Css, Js, React",
-    code : `${github}` 
+    code : `${github}/ClocksCart1` 
   },
   { 
-    title: "IOS Phone Calculator", 
+    title: "Calendar by data", 
     image: "product3.jpg", 
     link: `${git}/Calender`, 
-    des: "iOS-style calendar app.", 
+    des: "Calendar app give year Calender.", 
     lan: "Html, Css, Js, React",
-    code : `${github}` 
+    code : `${github}/Calender` 
   }
 ];
 
-
-  console.log(projects[0].link)
-  
 
   return (
     <div id="portfolio" className="portfolio-section Heights ">
