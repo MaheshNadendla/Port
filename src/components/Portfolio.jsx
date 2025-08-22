@@ -13,6 +13,33 @@ const projects = [
     des: "API to retrieve weather by city name.", 
     lan: "Html, Css, Js, React" 
   },
+
+  { 
+      title: "Fest Website", 
+      image: "festwebsite.jpg", 
+      link: "https://jntuhces-fest-2k25.onrender.com/", 
+      des: "College fest events and registrations.", 
+      lan: "HTML, CSS, JavaScript, React" 
+  },
+
+
+  { 
+    title: "Chat Application", 
+    image: "chatapp.jpg", 
+    link: `https://chatapp-frontend-5ql0.onrender.com/`, 
+    des: "A real-time chat app with messaging.", 
+    lan: "MERN Stack, Socket.io" 
+  },
+
+  { 
+    title: "PHP In-Out Project", 
+    image: "phpinout.jpg", 
+    link: `https://mahesh-nadendla.infinityfree.me/`, 
+    des: "Manage students in-out records.", 
+    lan: "PHP, MySQL, HTML, CSS" 
+  },
+
+
   { 
     title: "Bounce Ball Game", 
     image: "product2.jpg", 
