@@ -4,6 +4,7 @@ import './Portfolio.css'; // Include fog, ghost animations, and project card eff
 
 const Portfolio = () => {
   const git = 'https://maheshnadendla.github.io';
+  const github = 'https://github.com/MaheshNadendla';
 
 const projects = [
   { 
@@ -11,7 +12,8 @@ const projects = [
     image: "product1.jpg", 
     link: `${git}/WeatherAPIGraph`, 
     des: "API to retrieve weather by city name.", 
-    lan: "Html, Css, Js, React" 
+    lan: "Html, Css, Js, React",
+    code : `${github}/WeatherAPIGraph`
   },
 
   { 
@@ -19,7 +21,8 @@ const projects = [
       image: "festwebsite.jpg", 
       link: "https://jntuhces-fest-2k25.onrender.com/", 
       des: "College fest events and registrations.", 
-      lan: "HTML, CSS, JavaScript, React" 
+      lan: "HTML, CSS, JavaScript, React",
+      code : `${github}`
   },
 
 
@@ -28,7 +31,8 @@ const projects = [
     image: "chatapp.jpg", 
     link: `https://chatapp-frontend-5ql0.onrender.com/`, 
     des: "A real-time chat app with messaging.", 
-    lan: "MERN Stack, Socket.io" 
+    lan: "MERN Stack, Socket.io",
+    code : `${github}`
   },
 
   { 
@@ -36,7 +40,8 @@ const projects = [
     image: "phpinout.jpg", 
     link: `https://mahesh-nadendla.infinityfree.me/`, 
     des: "Manage students in-out records.", 
-    lan: "PHP, MySQL, HTML, CSS" 
+    lan: "PHP, MySQL, HTML, CSS",
+    code : `${github}`
   },
 
 
@@ -45,49 +50,56 @@ const projects = [
     image: "product2.jpg", 
     link: `${git}/BounceBall`, 
     des: "An engaging bouncing ball game.", 
-    lan: "Html, Css, Js, React" 
+    lan: "Html, Css, Js, React",
+    code : `${github}`
   },
   { 
     title: "IOS Phone Calculator", 
     image: "product3.jpg", 
     link: `${git}/IPhoneCalculator`, 
     des: "iOS-style mobile calculator.", 
-    lan: "Html, Css, Js, React" 
+    lan: "Html, Css, Js, React",
+    code : `${github}`
   },
   { 
     title: "English Dictionary API", 
     image: "product1.jpg", 
     link: `${git}/Dictionary`, 
     des: "API to get word meanings.", 
-    lan: "Html, Css, Js, React" 
+    lan: "Html, Css, Js, React",
+    code : `${github}` 
   },
   { 
     title: "Snake and Ladder Game", 
     image: "product2.jpg", 
     link: `${git}/SnakeAndLader`, 
     des: "Classic snake and ladder game.", 
-    lan: "Html, Css, Js, React" 
+    lan: "Html, Css, Js, React",
+    code : `${github}` 
   },
   { 
     title: "Tic-Tac-Toe Game", 
     image: "product3.jpg", 
     link: `${git}/Tic-Tac-Toe`, 
     des: "Classic Tic-Tac-Toe with O and X.", 
-    lan: "Html, Css, Js, React" 
+    lan: "Html, Css, Js, React",
+    code : `${github}` 
   },
   { 
     title: "Shopping Cart", 
     image: "product2.jpg", 
     link: `${git}/ClocksCart1`, 
     des: "Cart app for clock sales.", 
-    lan: "Html, Css, Js, React" 
+    lan: "Html, Css, Js, React",
+    code : `${github}` 
   },
   { 
     title: "IOS Phone Calculator", 
     image: "product3.jpg", 
     link: `${git}/Calender`, 
     des: "iOS-style calendar app.", 
-    lan: "Html, Css, Js, React" 
+    lan: "Html, Css, Js, React",
+    code : `${github}` 
   }
 ];
 
@@ -109,7 +121,7 @@ const projects = [
             </div>
             <div className="AllButtons">
             <a href={projects[index].link} className="view-project" target="_blank" rel="noopener noreferrer">View Live</a>
-              <a href={projects.link} className="view-project">View Code</a>
+              <a href={projects[index].code} className="view-project">View Code</a>
             </div>
           </div>
         ))}
